@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theekshana Harsha - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">TH</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg parallax-bg"></div>
+        <div class="floating-element floating-1"></div>
+        <div class="floating-element floating-2"></div>
+        <div class="floating-element floating-3"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title animate-in">
+                <div>Theekshana</div>
+                <div
+                    style="background: linear-gradient(135deg, #667eea 0%, #ffffff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    Harsha</div>
+            </h1>
+            <p class="hero-subtitle animate-in">
+                <span id="typewriter"></span>
+            </p>
+            <a href="#about" class="hero-cta animate-in">
+                <span>Explore My Work</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m9 18 6-6-6-6" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-container">
+            <h2 class="section-title animate-in">About Me</h2>
+            <p class="section-subtitle animate-in">Passionate technology enthusiast dedicated to creating innovative
+                digital solutions</p>
+
+            <div class="about-grid">
+                <div class="about-text animate-slide-left">
+                    <p>I’m a passionate and creative technology enthusiast currently pursuing my Higher National Diploma in Information Technology (HNDIT) at the Sri Lanka Institute of Advanced Technological Education (SLIATE). My academic and project experience spans across web development and game development—with a strong focus on both design and front-end technologies.</p>
+
+                    <p>With hands-on skills in HTML, CSS, JavaScript, PHP, and React, I am building responsive web applications with engaging user interfaces. I also have a keen interest in game design and development, where I blend creativity and logic to build immersive digital experiences.</p>
+
+                    <p>I thrive in collaborative environments and am constantly exploring new technologies and frameworks to expand my skill set. Whether it's coding a sleek UI or crafting gameplay mechanics, I bring dedication, curiosity, and a love for problem-solving to everything I do.</p>
+                    <p>🎯 Tech Stack Highlights
+                        <ul>
+                            <li>Front-End Development: HTML, CSS, JavaScript, React.js</li>
+                            <li>Web Development (Full Stack Basics with PHP)</li>
+                            <li>Databases: MySQL, MongoDB</li>
+                            <li>Game Development & Design</li>
+                        </ul>
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item animate-scale">
+                            <div class="stat-number"> </div>
+                            <div class="stat-label"></div>
+                        </div>
+                        <div class="stat-item animate-scale">
+                            <div class="stat-number"></div>
+                            <div class="stat-label"></div>
+                        </div>
+                        <div class="stat-item animate-scale">
+                            <div class="stat-number"></div>
+                            <div class="stat-label"></div>
+                        </div>
+                        <div class="stat-item animate-scale">
+                            <div class="stat-number"></div>
+                            <div class="stat-label"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual animate-slide-right">
+                    <img src="/image/profile.jpg" alt="Theekshana Harsha" class="about-profile-square" />
+                    <div class="about-card card-1">
+                        <h4 style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">Education</h4>
+                        <p style="font-size: 14px; opacity: 0.7;">HNDIT at SLIATE</p>
+                        <p style="font-size: 12px; opacity: 0.5; margin-top: 8px;">2023 - 2026</p>
+                    </div>
+                    <div class="about-card card-2">
+                        <h4 style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">Location</h4>
+                        <p style="font-size: 14px; opacity: 0.7;">Anuradhapura, Sri Lanka</p>
+                        <p style="font-size: 12px; opacity: 0.5; margin-top: 8px;">Born: May 29, 2002</p>
+                    </div>
+                    <div class="about-card card-3">
+                        <h4 style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">Focus</h4>
+                        <p style="font-size: 14px; opacity: 0.7;">Full-Stack Development</p>
+                        <p style="font-size: 14px; opacity: 0.7;">Game Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-container">
+            <h2 class="section-title animate-in">Skills & Expertise</h2>
+            <p class="section-subtitle animate-in">Learning to Mastering the art of digital creation through
+                cutting-edge technologies</p>
+
+            <div class="skills-grid">
+                <div class="skill-card animate-scale">
+                    <div class="skill-icon">🎨</div>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <p class="skill-description">Creating stunning, responsive user interfaces with modern web
+                        technologies</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="90"></div>
+                    </div>
+                    <div class="progress-text">HTML/CSS - 90%</div>
+                    <div class="skill-progress" style="margin-top: 16px;">
+                        <div class="progress-bar" data-width="85"></div>
+                    </div>
+                    <div class="progress-text">JavaScript - 85%</div>
+                    <div class="skill-progress" style="margin-top: 16px;">
+                        <div class="progress-bar" data-width="80"></div>
+                    </div>
+                    <div class="progress-text">React.js - 80%</div>
+                </div>
+
+                <div class="skill-card animate-scale">
+                    <div class="skill-icon">📱</div>
+                    <h3 class="skill-title">Mobile Development</h3>
+                    <p class="skill-description">Building cross-platform mobile applications with native performance</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="85"></div>
+                    </div>
+                    <div class="progress-text">React Native - 85%</div>
+                </div>
+
+                <div class="skill-card animate-scale">
+                    <div class="skill-icon">🎮</div>
+                    <h3 class="skill-title">Game Development</h3>
+                    <p class="skill-description">Crafting immersive gaming experiences with advanced game engines</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="75"></div>
+                    </div>
+                    <div class="progress-text">Unreal Engine - 75%</div>
+                    <div class="skill-progress" style="margin-top: 16px;">
+                        <div class="progress-bar" data-width="80"></div>
+                    </div>
+                    <div class="progress-text">Game Design - 80%</div>
+                </div>
+
+                <div class="skill-card animate-scale">
+                    <div class="skill-icon">⚙️</div>
+                    <h3 class="skill-title">Backend Development</h3>
+                    <p class="skill-description">Developing robust server-side solutions and APIs</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="70"></div>
+                    </div>
+                    <div class="progress-text">PHP - 70%</div>
+                </div>
+
+
+                <div class="skill-card animate-scale">
+                    <div class="skill-icon">🎯</div>
+                    <h3 class="skill-title">UI/UX Design</h3>
+                    <p class="skill-description">Designing intuitive and beautiful user experiences</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="85"></div>
+                    </div>
+                    <div class="progress-text">Design Principles - 85%</div>
+                </div>
+
+                <div class="skill-card animate-scale">
+                    <div class="skill-icon">🤝</div>
+                    <h3 class="skill-title">Soft Skills</h3>
+                    <p class="skill-description">Essential skills for effective collaboration and innovation</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px;">
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Problem-Solving</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Team
+                            Work</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Creativity</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Innovation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-container">
+            <h2 class="section-title animate-in">Projects</h2>
+            <p class="section-subtitle animate-in">A selection of my recent work</p>
+            <div class="projects-grid">
+                <div class="project-card animate-scale">
+                    <img src="image/ice cream.jpg" alt="Project 1" class="project-img">
+                    <h3 class="project-title"> Ice Cream Shop Website</h3>
+                    <p class="project-desc"> Created an interactive online storefront using HTML, CSS, JavaScript,
+                        and PHP, enabling order placement and integrating a payment system.</p>
+                    <a href="https://github.com/BAYMAX-x/Ice-Cream-Shop-Website.git" target="_blank" class="project-link">View Code</a>
+                </div>
+                <div class="project-card animate-scale">
+                    <img src="image/event managemet.jpg" alt="Project 2" class="project-img">
+                    <h3 class="project-title"> SLIATE Event Management System</h3>
+                    <p class="project-desc">Built a full-stack platform to manage student events, featuring
+                        secure login, event scheduling, and registration, using HTML, CSS, JavaScript, PHP, and MySQL.
+                    </p>
+                    <a href="#" target="_blank" class="project-link">View Code</a>
+                </div>
+                <div class="project-card animate-scale">
+                    <img src="image/fuel.jpg" alt="Project 3" class="project-img">
+                    <h3 class="project-title"> Fuel Management System</h3>
+                    <p class="project-desc">Developed a system using HTML, CSS, JavaScript, and PHP, with an
+                        admin dashboard, data analysis modules, and a secure backend powered by MySQL.</p>
+                    <a href="https://github.com/BAYMAX-x/Fuel-Management-System.git" target="_blank" class="project-link">View Demo</a>
+                </div>
+
+                <div class="project-card animate-scale">
+                    <img src="image/news.jpg" alt="Project 4" class="project-img">
+                    <h3 class="project-title"> AI-Powered News Website</h3>
+                    <p class="project-desc">Developed a personalized, voice-assisted news platform using React.js.
+                        Integrated AI-based summarization and text-to-speech features to enhance the user experience.
+                    </p>
+                    <a href="#" target="_blank" class="project-link">View Code</a>
+                </div>
+                <div class="project-card animate-scale">
+                    <img src="image/survival.jpg" alt="Project 5" class="project-img">
+                    <h3 class="project-title">Open-World Survival Game – Work in Progress</h3>
+                    <p class="project-desc"> Working on a multiplayer-ready open-world
+                        survival game with procedural environments. Implemented core systems like player mechanics,
+                        inventory,
+                        and crafting using C++ and Blueprints.</p>
+                    <a href="#" target="_blank" class="project-link">View Demo</a>
+                </div>
+                <div class="project-card animate-scale">
+                    <img src="image/horror.jpg" alt="Project 6" class="project-img">
+                    <h3 class="project-title">First-Person Horror Game – Prototype</h3>
+                    <p class="project-desc">Built a first-person horror experience with enemy patrol
+                        AI, and immersive audio triggers. Used Blueprints to implement flashlight systems, jump scares,
+                        and
+                        player interactions.</p>
+                    <a href="#" target="_blank" class="project-link">View Code</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-container">
+            <h2 class="section-title animate-in">Let's Connect</h2>
+            <p class="section-subtitle animate-in">Ready to bring your ideas to life? Let's start a conversation</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item animate-slide-left">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>thikshanaharsha02@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item animate-slide-left">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+94 717777062</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item animate-slide-left">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Anuradhapura, Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form animate-slide-right">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media-bar">
+        <div class="social-media-container">
+            <a href="https://github.com/BAYMAX-x" target="_blank" aria-label="GitHub" class="social-icon">
+                <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path fill="#fff"
+                        d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.578.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z" />
+                </svg>
+            </a>
+            <a href="https://linkedin.com/in/theekshana-harsha-ab29aa2ba" target="_blank" aria-label="LinkedIn"
+                class="social-icon">
+                <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <rect width="24" height="24" rx="4" fill="#fff" fill-opacity="0" />
+                    <path fill="#fff"
+                        d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.29h-3v-4.5c0-1.07-.02-2.44-1.49-2.44-1.49 0-1.72 1.16-1.72 2.36v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.85-1.54 3.05 0 3.61 2.01 3.61 4.62v4.69z" />
+                </svg>
+            </a>
+            <a href="mailto:thikshanaharsha02@gmail.com" aria-label="Email" class="social-icon">
+                <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <rect width="24" height="24" rx="4" fill="#fff" fill-opacity="0" />
+                    <path fill="#fff"
+                        d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4v-9.99l8 6.99 8-6.99V18z" />
+                </svg>
+            </a>
+            <a href="https://x.com/BAYMAX_999" target="_blank" aria-label="Twitter" class="social-icon">
+                <!-- X (Twitter) SVG -->
+                <svg width="32" height="32" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="1200" height="1227" fill="none" />
+                    <path fill="#fff"
+                        d="M908.7 0H1117.6L708.5 521.5L1200 1227H830.7L540.6 813.8L211.2 1227H2.1L434.2 668.2L0 0H376.2L634.2 375.2L908.7 0ZM845.6 1105.2H943.8L288.7 112.3H185.1L845.6 1105.2Z" />
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/theekshana_999/" target="_blank" aria-label="Instagram"
+                class="social-icon">
+                <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+                    <rect width="24" height="24" rx="6" fill="none" />
+                    <path fill="#fff"
+                        d="M12 7.2A4.8 4.8 0 1 0 12 16.8 4.8 4.8 0 0 0 12 7.2zm0 7.8a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6.4-8.4a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0zm3.2 1.12c-.07-1.5-.41-2.83-1.5-3.92C19.23 2.41 17.9 2.07 16.4 2c-1.5-.07-6-.07-7.5 0C7.1 2.07 5.77 2.41 4.68 3.5 3.59 4.59 3.25 5.92 3.18 7.42c-.07 1.5-.07 6 0 7.5.07 1.5.41 2.83 1.5 3.92 1.09 1.09 2.42 1.43 3.92 1.5 1.5.07 6 .07 7.5 0 1.5-.07 2.83-.41 3.92-1.5 1.09-1.09 1.43-2.42 1.5-3.92.07-1.5.07-6 0-7.5zm-2.88 9.12a3.25 3.25 0 0 1-1.83 1.83c-1.27.5-4.28.39-5.69.39s-4.42.11-5.69-.39a3.25 3.25 0 0 1-1.83-1.83c-.5-1.27-.39-4.28-.39-5.69s-.11-4.42.39-5.69a3.25 3.25 0 0 1 1.83-1.83c1.27-.5 4.28-.39 5.69-.39s4.42-.11 5.69.39a3.25 3.25 0 0 1 1.83 1.83c.5 1.27.39 4.28.39 5.69s.11 4.42-.39 5.69z" />
+            </a>
+            <a href="https://discord.gg/xAGNxTtV" target="_blank" aria-label="Discord" class="social-icon">
+                <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+                    <path fill="#fff"
+                        d="M20.317 4.369A19.791 19.791 0 0 0 16.885 3.2a.07.07 0 0 0-.073.035c-.321.566-.677 1.304-.927 1.885a18.524 18.524 0 0 0-5.77 0c-.25-.581-.606-1.319-.927-1.885A.07.07 0 0 0 9.115 3.2a19.791 19.791 0 0 0-3.432 1.169.064.064 0 0 0-.029.027C2.533 7.073 1.68 9.68 2.013 12.248c.002.02.01.04.022.056a19.911 19.911 0 0 0 5.995 3.036.07.07 0 0 0 .076-.027c.462-.634.874-1.304 1.226-2.01a.07.07 0 0 0-.038-.097 13.16 13.16 0 0 1-1.872-.893.07.07 0 0 1-.007-.116c.126-.095.252-.192.372-.291a.07.07 0 0 1 .073-.01c3.927 1.793 8.18 1.793 12.062 0a.07.07 0 0 1 .074.009c.12.099.246.196.372.291a.07.07 0 0 1-.006.116 12.98 12.98 0 0 1-1.873.893.07.07 0 0 0-.037.097c.36.705.773 1.375 1.226 2.01a.07.07 0 0 0 .076.027 19.888 19.888 0 0 0 6.002-3.036.07.07 0 0 0 .022-.056c.37-2.96-.6-5.567-2.641-7.952a.062.062 0 0 0-.03-.027zM8.02 13.665c-1.18 0-2.155-1.085-2.155-2.419 0-1.334.955-2.419 2.155-2.419 1.21 0 2.175 1.095 2.155 2.419 0 1.334-.955 2.419-2.155 2.419zm7.96 0c-1.18 0-2.155-1.085-2.155-2.419 0-1.334.955-2.419 2.155-2.419 1.21 0 2.175 1.095 2.155 2.419 0 1.334-.955 2.419-2.155 2.419z" />
+                </svg>
+            </a>
+            <a href="https://web.facebook.com/theekshana.harsha.617991" target="_blank" aria-label="Facebook"
+                class="social-icon">
+                <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+                    <path fill="#fff"
+                        d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.692v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0" />
+                </svg>
+            </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Theekshana Harsha. Crafted with passion and modern technology.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
